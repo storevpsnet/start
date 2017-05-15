@@ -1,5 +1,5 @@
 # [کانال تلگرامی ماl](https://telegram.me/storevps)
-# [وب سایت ما](https://storevps.net/)</style>
+# [وب سایت ما](https://storevps.net/)
 
 <b> لازم به زدن هیچ دستوری نیسته </b>
 ```sh
