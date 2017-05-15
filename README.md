@@ -3,8 +3,10 @@
 
 <b> لازم به زدن هیچ دستوری نیسته </b>
 
+```sh
 cd $HOME
 git clone https://github.com/storevpsnet/start.git
 cd start
 chmod 777 start.sh
 ./start.sh install
+```
