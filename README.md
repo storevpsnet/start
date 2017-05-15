@@ -8,4 +8,5 @@ git clone https://github.com/storevpsnet/start.git
 cd start
 chmod 777 start.sh
 ./start.sh install
-```<a><h2> ستاره یادتون نره </h2></a>
+```
+<a><h2> ستاره یادتون نره </h2></a>
