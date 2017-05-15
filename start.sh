@@ -39,5 +39,3 @@ update() {
 	git pull
 }
 
-
-fi
