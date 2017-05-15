@@ -8,16 +8,14 @@ install() {
 		sudo apt-get install g++-4.7 -y c++-4.7 -y
 		sudo apt-get install libreadline6
 		sudo apt-get update
-		sudo apt-get upgrade
+		sudo apt-get upgrade -y
 		sudo apt-get install libreadline-dev -y libconfig-dev -y libssl-dev -y lua5.2 -y liblua5.2-dev -y lua-socket -y lua-sec -y lua-expat -y libevent-dev -y make unzip git redis server autoconf g++ -y libjansson-dev -y libpython-dev -y expat libexpat1-dev -y
 		sudo apt-get install screen -y
 		sudo apt-get install tmux -y
 		sudo apt-get install libstdc++6 -y
 		sudo apt-get install lua-lgi -y
 		sudo apt-get install libnotify-dev -y
-		wget https://valtman.name/files/telegram-cli-1222
-		mv telegram-cli-1222 tgcli
-		chmod 777 tgcli
+		
 }
 
 
@@ -41,24 +39,5 @@ update() {
 	git pull
 }
 
-if [ "$1" = "install" ]; then
-	print_logo
-	
-	logo_play
-	install
-elif [ "$1" = "update" ]; then
-	logo_play
-	
-	update
-else
-if [ ! -f ./libs/tgcli ]; then
-    echo "tgcli not found"
-    echo "Run $0 install"
-    exit 1
-fi
-	print_logo
-	
-	logo_play
-	#sudo service redis-server restart
-	./libs/tgcli -s ./bot/bot.lua $@
+
 fi
